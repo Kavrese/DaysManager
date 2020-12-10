@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground">
+<LinearLayout
     android:id="@+id/main_lin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
     android:orientation="vertical"
     android:weightSum="100"
     tools:context=".MainActivity">
@@ -58,8 +62,7 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="20dp"
                     android:layout_weight="6.5"
-                    android:src="@drawable/account"
-                    app:shapeAppearanceOverlay="@style/Image_Corne" />
+                    android:src="@drawable/account" />
             </LinearLayout>
 
         </com.github.florent37.shapeofview.shapes.ArcView>
@@ -96,3 +99,9 @@
     </LinearLayout>
 
 </LinearLayout>
+
+    <include
+        layout="@layout/start_lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
