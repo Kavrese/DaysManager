@@ -6,6 +6,9 @@
     <color name="colorText">#fffbfc</color>
     <color name="colorText2">#8d81a9</color>
     <color name="colorBackground">#1a0e60</color>
+    <color name="colorBackgroundItem">#1F1171</color>
+    <color name="colorButton">#FFFFFF</color>
+    <color name="colorButton2">#000000</color>
     <color name="colorWindow">#2b0c8e</color>
 
     <color name="colorWindowBackground">#4D2B0C8E</color>
