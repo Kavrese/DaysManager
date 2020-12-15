@@ -10,23 +10,37 @@
     app:layoutDescription="@xml/layout_content_scene">
 
 
-    <LinearLayout
+    <com.github.florent37.shapeofview.shapes.RoundRectView
         android:id="@+id/lin_date"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginTop="10dp"
-        android:background="@color/colorWindowBackground"
-        android:gravity="center|top"
-        android:orientation="vertical"
-        android:weightSum="10"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_weight="9"
+        app:shape_roundRect_borderColor="@android:color/black"
+        app:shape_roundRect_borderWidth="0dp"
+        app:shape_roundRect_bottomLeftRadius="20dp"
+        app:shape_roundRect_bottomRightRadius="20dp"
+        app:shape_roundRect_topLeftRadius="20dp"
+        app:shape_roundRect_topRightRadius="20dp"
+        tools:layout_editor_absoluteY="10dp">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rec_date"
+        <LinearLayout
+            android:id="@+id/lin_date_in"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="9" />
-    </LinearLayout>
+            android:background="@color/colorWindowBackground"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:weightSum="10"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                layout="@layout/lin_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
 
     <LinearLayout
         android:id="@+id/lin_main"
